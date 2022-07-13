@@ -1,0 +1,238 @@
+div {
+    background: green;
+    border: 1px solid red;
+}
+.footer {
+    background: #f1f2f3;
+    border-top: 1px solid #dfe1e2;
+    line-height: 1;
+    font-size: 14px;
+    width: 100%;
+    height: 326px;
+}
+.footer {
+    clear: both;
+    position: relative;
+}
+
+
+.footer-nav-wrapper {
+    margin-top: 2.4rem;
+    margin-bottom: 2.4rem;
+}
+.gd-row-gutter-60 {
+    margin-left: -30px;
+    margin-right: -30px;
+}
+.gd-row {
+    zoom: 1;
+    position: relative;
+}
+.gd-row:before, .gd-row:after {
+    display: table;
+    content: "";
+}
+.gd-row:after {
+    clear: both;
+}
+.gd-row-gutter-60 .gd-col {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.gd-col-3 {
+    float: left;
+    box-sizing: border-box;
+    width: 25%;
+}
+.footer-nav {
+    height: 168px;
+}
+.footer-nav-hd {
+    font-size: 14px;
+    line-height: 64px !important;
+    color: #0D1C28;
+    padding: 0 24px;
+    background-color: #EAEBEB;
+}
+.footer-nav-title {
+    line-height: 64px;
+}
+.footer-nav-bd {
+    zoom: 1;
+    height: 104px;
+    background-color: #EAEBEB;
+}
+.footer-nav-sitemap .footer-nav-link {
+    width: 50%;
+    float: left;
+}
+.footer-nav-sitemap .footer-nav-link:nth-child(2n) {
+    padding-left: 0;
+}
+.footer-nav-bd a {
+    font-size: 14px;
+}
+.footer a {
+    color: #45484B;
+}
+.footer a:hover {
+    color: #727475;
+}
+.footer-nav-link {
+    display: block;
+    padding: 0 15px;
+    line-height: 38px;
+}
+.footer-mp {
+    height: 168px;
+}
+.footer-mp a {
+    font-size: 14px;
+}
+.footer a {
+    color: #45484B;
+}
+.footer-mp-item {
+    position: relative;
+    display: block;
+    margin-bottom: 3px;
+    white-space: nowrap;
+    color: #45484B;
+    height: 54px;
+    line-height: 54px;
+    padding: 0 15px 0 60px;
+    background: url(./images/qr.png) no-repeat 20px center #EAEBEB;
+    background-size: 23px 23px;
+}
+.footer-mp-item:hover .footer-mp-item-hover {
+    display: block;
+}
+.footer-mp-item-hover {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 62px;
+    width: 100%;
+    height: 220px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 15px rgb(9 41 77 / 15%);
+    opacity: 0.97;
+    z-index: 99;
+}
+.footer-mp-item-hover .qrcode-gov {
+    background-image: url(./images/qrcode-gov.png);
+}
+.footer-mp-item-hover > b {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+}
+.footer-mp-item-hover > i {
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    display: block;
+    font-style: normal;
+    line-height: 1.5;
+}
+.footer-mp-item-hover .qrcode-minapp {
+    background-image: url(./images/minapp.png);
+}
+.footer-mp-item-hover .qrcode-yst {
+    background-image: url(./images/qrcode-yst.png);
+}
+.footer .support {
+    zoom: 1;
+    height: 168px;
+}
+.footer .support a {
+    position: relative;
+    display: block;
+    white-space: nowrap;
+    color: #45484B;
+}
+.footer .support a {
+    position: relative;
+    display: block;
+    white-space: nowrap;
+    color: #45484B;
+}
+.footer .support-link {
+    background: url(./images/cavil.jpg) no-repeat center center #eaebeb;
+    background-size: 96px 48px;
+    float: left;
+    height: 168px;
+    width: 146px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-indent: 100%;
+    margin-right: 3px;
+}
+.footer .support-party {
+    background: url(./images/red.png) no-repeat center center #eaebeb;
+    background-size: 28px auto;
+    height: 168px;
+    margin-left: 146px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-indent: 100%;
+}
+.footer-copyright {
+    padding: 0.6rem 0;
+    font-size: 14px;
+    color: #727475;
+    line-height: 3rem;
+    text-align: center;
+    background: #eaebeb;
+    border-top: 1px solid #dfe1e2;
+}
+.footer-copyright-left {
+    line-height: 24px;
+}
+.footer-copyright-right {
+    line-height: 24px;
+}
+.footer-copyright--block {
+    white-space: nowrap;
+}
+
+.footer-ysx.footer-mp-item {
+    height: auto;
+    line-height: 1.2rem;
+    background: none;
+    margin: 0 1.2rem;
+    padding: 0 0 0.6rem;
+    border-bottom: 1px dashed #cfd2d4;
+}
+.footer-ysx .ysx-content {
+    display: flex;
+    align-items: center;
+}
+.footer-ysx .logo-ysx {
+    display: block;
+    width: 1.4rem;
+    min-width: 1.4rem;
+    height: 1.4rem;
+    background-image: url(./images/ysx-logo.png);
+    background-size: cover;
+}
+.footer-contact {
+    display: flex;
+    align-items: center;
+    margin-top: 0.55rem;
+    padding: 0 1.2rem;
+    line-height: 1.9rem;
+}
+.footer-contact-tel {
+    color: #45484b;
+}
+.footer-nav-link:last-child {
+    margin-bottom: 0;
+}
+
+.footer-mp-item-hover .qrcode-ysx {
+    background-image: url(./images/qrcode-ysx.jpg);
+}
