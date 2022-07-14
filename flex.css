@@ -1,0 +1,17 @@
+/* flex属性 */
+.flex {
+    /* 容器 */
+    flex-direction: ;
+    justify-content: ;
+    align-items: ;
+    flex-wrap: ;
+    flex-flow: column nowrap;
+    align-content: ;
+    /* 项目 */
+    order: '';
+    flex-grow: ;
+    flex-shrink: ;
+    flex-basis: ;
+    flex
+    align-self: ;
+}
