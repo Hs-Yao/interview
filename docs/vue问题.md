@@ -16,3 +16,52 @@ mvc是model，view，controller，模型层，视图层和控制层，在js中vi
 
 mvvm是model模型层，view视图层和vm层，vm实现了数据的双向绑定，不需要手动操作dom，当view数据改变model层也会跟着改变，model层数据改变view也会跟着改变
 
+### data为什么是一个函数
+
+假设data是一个对象，那他就是一个引用类型，在多个vue实例中，就相当于共用一组数据，当某个实例的数据改变，另一个实例的数据也会跟着改变，如果是函数的话，就相当于给每个实例数据生成一个私人数据空间，每个实例维护自己的数据
+
+### Vue通讯方式
+- props和emit
+- provide和inject
+- bus总线
+- vuex
+- $parent和$children
+- $attrs和$listeners 父传孙
+
+### vuex
+
+五个属性
+state 存取状态变量
+mutations  更改状态变量，但是一定要是同步函数，是一种规范，否则追踪不到变量的改变，使用this.$store.commit('setAge',data)去触发
+```
+setAge(state, data) {
+    state.age = data
+}
+```
+actions    更改状态变量，但是可以是异步函数，使用dispatch去触发mutations   this.$store.dispatch('updateAge',data)  
+```
+updateAge(context, data) {
+    context.commit('setAge', data)
+}
+```
+getters 类似computed属性，依赖于state变量，缓存数据
+modules 模块
+
+扩展：
+1. vuex数据和localStorage缓存的区别
+
+vuex存储在内存，localStorage以文件形式存储在本地
+vuex数据刷新会丢失，localStorage不会
+vuex能做到两个组件一个数据改变，另个响应改变，localStorage不可以
+
+2. cookie，sessionStorage, localStorage的区别
+
+cookie数据会在http请求中携带发给服务端，cookie会在客户端和服务端来回传递；cookie大小不超过4kb，有效期：设置过期时间，同源窗口数据共享
+sessionStorage数据存储在客户端，关闭浏览器就会清除数据，大小不超过5m，在不同浏览器上数据不共享
+localStorage数据存储在客户端，永久保存，大小不超过5M，同源窗口共存
+
+3. cookie和session的区别
+session是保存在服务端的，cookie是保存在客户端的，session比cookie安全，session数据是通过sessionId获取，sessionId是在cookie带的
+
+
+
