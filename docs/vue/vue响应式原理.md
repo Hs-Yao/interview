@@ -1,0 +1,6 @@
+# vue响应式原理
+
+使用数据劫持加观察者模式
+主要是三个方法类，Observer,dep,Watcher
+
+1. 初始化Observer会遍历data，通过Object.defineProperty的get，set方法来改写，每一个属性都有一个dep依赖管理器，然后get方法内调用dep方法添加watcher监听，mount的时候实例化watcher，数据更新的时候set的方法会触发dep的notify方法去触发watcher更新数据，触发重新渲染render
