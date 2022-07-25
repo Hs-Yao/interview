@@ -24,29 +24,3 @@ function jieliu(fn,wait) {
         },wait);
     }
 }
-//节流
-
-function fangdou1(fn,wait) {
-    let timer;
-    return function() {
-        if(timer) {
-            clearTimeout(timer)
-        }
-        timer = setTimeout(() => {
-            fn.call(this,arguments)
-        }, wait)
-    }
-}
-
-function jieliu1(fn,wait) {
-    let timer;
-    return function() {
-        if(timer) {
-            return
-        }
-        timer = setTimeout(() => {
-            fn.call(this,arguments)
-            timer = null;
-        },wait)
-    }
-}
