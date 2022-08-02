@@ -2,8 +2,7 @@
 async function async1() {
     console.log('async1 start');
     await async2();
-    //相当与then
-    console.log('async1 end');
+    console.log('async1 end'); //这个相当于一个微任务then
 }
 async function async2() {
     console.log('async2');
@@ -67,7 +66,7 @@ const result1 = ['2', '4', '5', '10', '8', '9', '3', '6', '1', '7']
 async function async1() {
     console.log('async1')
     await async2()
-    console.log('async1 end')
+    console.log('async1 end') //这个相当于一个微任务then
 }
 async function async2() {
     console.log('async2')

@@ -1,7 +1,7 @@
 ###  http1.0和http1.1
 - 默认开启keep-alive，在一个TCP连接上可以传送多个HTTP请求和响应
 - 节约了带宽，HTTP1.1支持只发送header信息（不带任何body信息），如果服务器认为客户端有权限请求服务器，则返回100（继续），客户端接收到100才开始把请求body发送到服务器；如果返回401，客户端就可以不用发送请求body了节约了带宽。
-- host域
+- host域(HTTP1.1在Request消息头里头多了一个Host域，而且是必传的，HTTP1.0则没有这个域)
 - 缓存的处理expires和cache-control
 - 新增24个错误状态码
 

@@ -23,4 +23,4 @@ function jieliu(fn,wait) {
             timer = null
         },wait);
     }
-}
+}   
