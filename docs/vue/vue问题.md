@@ -157,6 +157,22 @@ destoryed   实例销毁后调用
 activated   keep-alive 组件激活的时候触发
 deactivated  keep-alive 组件失活的时候触发
 
+### Vue父子组件生命周期
+
+挂载阶段
+执行顺序为：
+父beforeCreate -> 父created -> 父beforeMount -> 子beforeCreate -> 子created -> 子beforeMount -> 子mounted -> 父mounted
+
+更新阶段
+执行顺序为：
+父beforeUpdate -> 子beforeUpdate -> 子updated -> 父updated
+
+销毁阶段
+执行顺序为：
+父beforeDestroy -> 子beforeDestroy -> 子destroyed -> 父destroyed
+
+规律就是：父组件先开始执行，然后等到子组件执行完，父组件收尾。
+
 
 
 
